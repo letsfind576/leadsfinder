@@ -1,0 +1,14 @@
+Food companies total: 284
+Food Services companies total: 363
+Common companies: 10
+List of common companies:
+ - AL-HAFIZ SWEETS AND BAKERS
+ - UMER BAKERS & GENERAL STORE
+ - KHALID ENTERPRISE
+ - M MOTHER FOOD INDUSTRIES
+ - ROYAL FOOD PRODUCTS
+ - SHAHBAZ KULCHA HOUSE & FOODS
+ - ESET (PVT) LTD
+ - FRI-CHIKS (PVT) LTD
+ - SHABBIR AHMED DEAN
+ - GOURMET (PVT) LTD.

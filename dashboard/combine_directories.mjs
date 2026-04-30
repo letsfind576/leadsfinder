@@ -36,6 +36,12 @@ function main() {
         const validRows = parsed.data.filter(row => row['Company Name'] && row['Company Name'].trim() !== '');
         
         validRows.forEach(row => {
+            // Strip embedded newlines/carriage returns from all fields to prevent CSV parsing issues
+            for (const key of Object.keys(row)) {
+                if (typeof row[key] === 'string') {
+                    row[key] = row[key].replace(/[\r\n]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+                }
+            }
             row['Directory'] = dirName;
             combinedData.push(row);
         });

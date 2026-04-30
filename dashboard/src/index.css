@@ -13,6 +13,7 @@
   --success-bg: #D1FAE5;
   --blue-color: #3B82F6;
   --blue-bg: #DBEAFE;
+  --hover-bg: #F8FAFC;
 }
 
 [data-theme="dark"] {
@@ -23,6 +24,7 @@
   --border-color: #334155;
   --primary-color: #10B981; /* Brighter primary for dark mode legibility */
   --primary-hover: #059669;
+  --hover-bg: #2A3441;
 }
 
 * {
@@ -264,7 +266,7 @@ tr:last-child td {
 }
 
 tr:hover td {
-  background-color: #F8FAFC;
+  background-color: var(--hover-bg);
 }
 
 .badge {

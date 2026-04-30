@@ -34,9 +34,10 @@ function App() {
       // Load the newly combined data.csv
       let parsedData;
       try {
-        parsedData = await parseCSV('/data.csv');
+        const csvUrl = `${import.meta.env.BASE_URL}data.csv`;
+        parsedData = await parseCSV(csvUrl);
       } catch (e) {
-        console.error('Failed to load /data.csv', e);
+        console.error('Failed to load data.csv', e);
         parsedData = [];
       }
       
